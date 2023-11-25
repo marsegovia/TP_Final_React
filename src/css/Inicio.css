@@ -1,0 +1,15 @@
+
+div{
+    background-size: cover;
+}
+
+.catalogo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto{
+    margin: 20px;
+}
