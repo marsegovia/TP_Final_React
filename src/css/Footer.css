@@ -1,0 +1,15 @@
+
+
+footer{
+    height: 150px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}

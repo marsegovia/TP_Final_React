@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+header img{
+    margin-top: 20px;
+}
+
+header ul{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+li{
+    
+    margin-left: 20px;
+}
