@@ -1,20 +1,31 @@
-import '../css/Header.css'
+import "../css/Header.css";
 import { FaCartShopping } from "react-icons/fa6";
 import { VscAccount } from "react-icons/vsc";
+import LogoPagina from "../IMG/logo-pagina.jpg";
 
-function Header(){
-    return(
-        <>
-        <header>
-            <img src="src/IMG/1.png" alt="Logo de la pagina" />
-            <ul>
-                <a href=""><li><VscAccount/></li></a>
-                <a href=""><li><FaCartShopping /></li></a>
-                <a href=""><li><button className='boton1'>Iniciar sesion</button></li></a>
-            </ul>
-        </header>
-        </>
-    )
+function Header() {
+  return (
+    <header>
+      <img src={LogoPagina} alt="Logo de la pagina" />
+      <ul>
+        <li>
+          <a href="">
+            <VscAccount color="black" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <FaCartShopping color="black" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <button className="boton1">Iniciar sesion</button>
+          </a>
+        </li>
+      </ul>
+    </header>
+  );
 }
 
-export default Header
+export default Header;

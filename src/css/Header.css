@@ -1,55 +1,51 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
-header{
-    display: flex;
-    justify-content: space-around;
-    height: 80px;
-    background-color: black;
-    width: 100%;
-    color: white;
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 87px;
+  background-color: #ffff;
+  width: 100%;
+  color: white;
 }
 
-header img{
-    height: 80px;
-    margin-left: -200px;
+header img {
+  width: 98px;
+  height: 86px;
 }
 
-header ul{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin-right: -100px;
-    align-items: center;
+header ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding-right: 10px;
 }
 
-header ul a{
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    cursor: pointer;
+header ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  cursor: pointer;
 }
 
-header ul a:hover{
-    color: bisque;
+header ul a:hover {
+  color: bisque;
 }
 
-
-li{
-    font-size: 35px;
-    margin-left: 20px;
+li {
+  font-size: 35px;
+  margin-left: 20px;
 }
 
-.boton1{
-    height: 35px;
-    border: 2px solid;
-    background-image: linear-gradient(#ee0979,#ff6a00);
-    cursor: pointer;
-    width: auto;
+.boton1 {
+  height: 35px;
+  border: 2px solid;
+  cursor: pointer;
+  width: auto;
 }
 
-.boton1:hover{
-    color: white;
+.boton1:hover {
+  color: white;
 }
