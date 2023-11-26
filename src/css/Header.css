@@ -22,6 +22,7 @@ header ul{
     flex-direction: row;
     list-style: none;
     margin-right: -100px;
+    align-items: center;
 }
 
 header ul a{
@@ -37,6 +38,18 @@ header ul a:hover{
 
 
 li{
-    
+    font-size: 35px;
     margin-left: 20px;
+}
+
+.boton1{
+    height: 35px;
+    border: 2px solid;
+    background-image: linear-gradient(#ee0979,#ff6a00);
+    cursor: pointer;
+    width: auto;
+}
+
+.boton1:hover{
+    color: white;
 }

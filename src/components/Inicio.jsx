@@ -3,9 +3,9 @@ import '../css/Inicio.css'
 function Inicio(){
     return(
         <>
-            <div className='intro' style={{backgroundImage: "url(src/IMG/olea22.jpg)", height: "500px", backgroundRepeat:"no-repeat"}}>
+            <div className='intro' style={{backgroundImage: "url(src/IMG/Red.jpg)", height: "600px", backgroundRepeat:"no-repeat"}}>
                 <h1>VIMART</h1>
-                <h3>Te presentamos una muy variada lista de las obras mas populares del mundo</h3>
+                <h3>Te presentamos una muy variada lista <br /> de las obras mas populares del mundo</h3>
                 <button className='boton'>Ver la coleccion</button>
             </div>
 
