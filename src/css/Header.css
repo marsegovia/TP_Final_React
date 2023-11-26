@@ -12,7 +12,8 @@ header{
 }
 
 header img{
-    margin-top: 20px;
+    height: 80px;
+    margin-left: -200px;
 }
 
 header ul{
@@ -20,7 +21,20 @@ header ul{
     display: flex;
     flex-direction: row;
     list-style: none;
+    margin-right: -100px;
 }
+
+header ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+header ul a:hover{
+    color: bisque;
+}
+
 
 li{
     

@@ -1,3 +1,9 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
 
 div{
     background-size: cover;
@@ -12,4 +18,19 @@ div{
 
 .producto{
     margin: 20px;
+}
+
+.boton{
+    margin-top: 50px;
+    width: 200px;
+    margin-left: 550px;
+    height: 4em;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #FFA726;
+}
+
+.boton:hover{
+    color: black;
+    background-color: #FFCC80;
 }
