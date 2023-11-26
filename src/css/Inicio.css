@@ -3,6 +3,9 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background-color: #d2f2c9;
+  height: 470px;
+  color: #d8a0d9;
 }
 
 .intro h1 {
@@ -37,17 +40,17 @@ div {
 }
 
 .boton {
-  width: 200px;
+  width: 150px;
   margin: 30px auto 0 auto;
   height: 4em;
   border-radius: 20px;
   cursor: pointer;
-  background-color: #ffa726;
+  background-color: #2ec9d0;
+  color: antiquewhite;
 }
 
 .boton:hover {
-  color: black;
-  background-color: #ffcc80;
+  color: antiquewhite;
 }
 
 .texto {

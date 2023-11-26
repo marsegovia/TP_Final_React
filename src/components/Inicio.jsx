@@ -1,16 +1,31 @@
+import { useEffect, useState } from "react";
 import "../css/Inicio.css";
+import axios from "axios";
 
 function Inicio() {
+  const [fotos, setFotos] = useState([]);
+
+  const obtenerFotos = async () => {
+    const { data } = await axios.get(
+      `https://api.unsplash.com/search/photos?query=art`,
+      {
+        headers: {
+          Authorization:
+            "Client-ID 2H2WmJE_jIOiV-fYP1k7LqnNlJajv07Xd6NJmdfVJNg",
+        },
+      }
+    );
+
+    setFotos(data.results);
+  };
+
+  useEffect(() => {
+    obtenerFotos();
+  }, []);
+
   return (
     <>
-      <div
-        className="intro"
-        style={{
-          backgroundImage: "url(src/IMG/Red.jpg)",
-          height: "600px",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+      <div className="intro" style={{}}>
         <h1>VIMART</h1>
         <h3>
           Te presentamos una muy variada lista <br /> de las obras mas populares
@@ -22,77 +37,14 @@ function Inicio() {
       <h2 className="texto"> Catálogo de Objetos</h2>
 
       <div className="catalogo">
-        <div className="producto">
-          <h2>Producto 1</h2>
-          <p>Descripción del producto 1.</p>
-          <p>$100.00</p>
-        </div>
-
-        <div className="producto">
-          <h2>Producto 2</h2>
-          <p>Descripción del producto 2.</p>
-          <p>$150.00</p>
-        </div>
-
-        <div className="producto">
-          <h2>Producto 3</h2>
-          <p>Descripción del producto 3.</p>
-          <p>$80.00</p>
-        </div>
-
-        <div className="producto">
-          <h2>Producto 1</h2>
-          <p>Descripción del producto 1.</p>
-          <p>$100.00</p>
-        </div>
-
-        <div className="producto">
-          <h2>Producto 2</h2>
-          <p>Descripción del producto 2.</p>
-          <p>$150.00</p>
-        </div>
-
-        <div className="producto">
-          <h2>Producto 3</h2>
-          <p>Descripción del producto 3.</p>
-          <p>$80.00</p>
-        </div>
-
-        <div className="producto">
-          <h2>Producto 1</h2>
-          <p>Descripción del producto 1.</p>
-          <p>$100.00</p>
-        </div>
-
-        <div className="producto">
-          <h2>Producto 2</h2>
-          <p>Descripción del producto 2.</p>
-          <p>$150.00</p>
-        </div>
-
-        <div className="producto">
-          <h2>Producto 3</h2>
-          <p>Descripción del producto 3.</p>
-          <p>$80.00</p>
-        </div>
-
-        <div className="producto">
-          <h2>Producto 1</h2>
-          <p>Descripción del producto 1.</p>
-          <p>$100.00</p>
-        </div>
-
-        <div className="producto">
-          <h2>Producto 2</h2>
-          <p>Descripción del producto 2.</p>
-          <p>$150.00</p>
-        </div>
-
-        <div className="producto">
-          <h2>Producto 3</h2>
-          <p>Descripción del producto 3.</p>
-          <p>$80.00</p>
-        </div>
+        {fotos.map((foto) => (
+          <div className="producto">
+            <img src={foto.urls.thumb}></img>
+            <h2>{foto.alt_description}</h2>
+            <p>{foto.description}</p>
+            <p>${foto.likes}</p>
+          </div>
+        ))}
       </div>
     </>
   );
