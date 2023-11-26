@@ -14,10 +14,20 @@ div{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #ec008c,#fc6767;
+    background-image: url('src/IMG/klipartz.com (1).png');
 }
 
+
 .producto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     margin: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 250px;
+    width: 300px;
 }
 
 .boton{
@@ -33,4 +43,12 @@ div{
 .boton:hover{
     color: black;
     background-color: #FFCC80;
+}
+
+.texto{
+    background-color: black;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(#0f0c29,#302b63,#24243e);
+    height: 50px;
 }

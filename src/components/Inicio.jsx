@@ -9,9 +9,9 @@ function Inicio(){
                 <button className='boton'>Ver la coleccion</button>
             </div>
 
-            <h2>Catálogo de Objetos</h2>
+            <h2 className='texto'> Catálogo de Objetos</h2>
 
-        <div className='catalogo'>
+<div className='catalogo'>
             <div className='producto'>
                 <h2>Producto 1</h2>
                 <p>Descripción del producto 1.</p>
@@ -83,8 +83,7 @@ function Inicio(){
                 <p>Descripción del producto 3.</p>
                 <p>$80.00</p>
             </div>
-
-        </div>
+</div>
         </>
     )
 }
