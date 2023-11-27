@@ -17,3 +17,13 @@ footer ul {
   text-align: center;
   margin-right: 30px;
 }
+
+footer ul a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer ul a:hover{
+  color: #3a969a87;
+}

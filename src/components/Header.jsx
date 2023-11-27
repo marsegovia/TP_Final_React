@@ -20,7 +20,7 @@ function Header() {
         </li>
         <li>
           <a href="">
-            <button className="boton1" >Inciar Sesion</button>
+            <button className="boton1" >Iniciar Sesion</button>
           </a>
         </li>
       </ul>
