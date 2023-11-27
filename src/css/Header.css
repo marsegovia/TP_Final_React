@@ -41,12 +41,14 @@ li {
 
 .boton1 {
   height: 35px;
-  border: 2px solid;
+  border: none;
   cursor: pointer;
   width: auto;
   margin-bottom: 10px;
+  background-color: black;
+  color: white;
 }
 
 .boton1:hover {
-  color: white;
+  background-color: #2ec9d0;
 }
