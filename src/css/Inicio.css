@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto:wght@300;400&display=swap");
 .intro {
   display: flex;
   flex-direction: column;
@@ -6,12 +7,14 @@
   background-color: #d2f2c9;
   height: 503px;
   color: #d8a0d9;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
 }
 
 .intro h1 {
-  font-family: brush;
+  font-family: "Josefin Sans", sans-serif;
   margin-top: 15px;
-  font-size: 80px;
+  font-size: 130px;
   font-weight: bold;
 }
 
@@ -35,28 +38,37 @@ div {
   box-sizing: border-box;
   border-radius: 4px;
   overflow: hidden;
-  border: 1px solid rgb(178, 174, 174);
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  box-shadow: 10px 14px 22px hsla(0, 0%, 38%, 0.27);
 }
 
 .boton {
   width: 150px;
   margin: 30px auto 0 auto;
   height: 4em;
-  border-radius: 20px;
+  border-radius: 9px;
   cursor: pointer;
-  background-color: #2ec9d0;
-  color: antiquewhite;
+  background-color: #3a969a87;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
-.boton:hover {
-  color: antiquewhite;
+.boton1:hover {
+  background-color: #d2f2c9;
+  transition: 400ms;
+}
+.boton1 {
+  background-color: #fff;
+  box-shadow: 0px 0px 4px hsl(107, 62%, 80%);
+  color: black;
 }
 
 .texto {
-  background-color: black;
   color: white;
   text-align: center;
-  background-image: linear-gradient(#4ac6cdc3, #56c6cc, #50c4cab5);
+  background-image: linear-gradient(#96ef7db5, #d2f2c9, #95ff78a6);
+  filter: grayscale(50%);
   height: 38px;
   padding: 7px 0px 0px;
 }
@@ -75,8 +87,15 @@ div {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-weight: 300;
+  font-size: 11px;
 }
 
 .producto--textos {
-  padding: 5px;
+  padding: 10px;
+  inline-size: revert-layer;
+  margin-right: 20px;
+  margin-left: 20px;
+  line-height: 22px;
+  color: #454545;
 }

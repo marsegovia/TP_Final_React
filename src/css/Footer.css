@@ -1,20 +1,19 @@
-
-footer{
-    height: 150px;
-    background-color: black;
-    background-image: linear-gradient(#4ac6cdc3, #56c6cc, #50c4cab5);
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+footer {
+  background-image: linear-gradient(#afff99dc, #d2f2c998, #b6ffa4e1);
+  color: #454545;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 0px;
 }
 
-footer ul{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  margin-right: 30px;
 }
