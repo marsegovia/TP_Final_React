@@ -31,18 +31,22 @@ function Inicio() {
           Te presentamos una muy variada lista <br /> de las obras mas populares
           del mundo
         </h3>
-        <button className="boton">Ver la coleccion</button>
+        <a href="#seccion-catalogo">
+          <button className="boton">Ver la coleccion</button>
+        </a>
       </div>
 
       <h2 className="texto"> Catálogo de Objetos</h2>
 
-      <div className="catalogo">
+      <div id="seccion-catalogo" className="catalogo">
         {fotos.map((foto) => (
           <div className="producto">
-            <img src={foto.urls.thumb}></img>
-            <h2>{foto.alt_description}</h2>
-            <p>{foto.description}</p>
-            <p>${foto.likes}</p>
+            <img className="producto--imagen" src={foto.urls.thumb}></img>
+            <div className="producto--textos">
+              <h2 className="producto--titulo">{foto.alt_description}</h2>
+              <p className="producto--descripcion">{foto.description}</p>
+              <p>${foto.likes}</p>
+            </div>
           </div>
         ))}
       </div>
