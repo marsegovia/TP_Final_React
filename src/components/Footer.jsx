@@ -6,8 +6,8 @@ function Footer() {
     <div>
       <footer>
         <ul>
-        <a href="src/Pages/About.html"><li>About</li></a>
-        <a href="src/pages/Politcas"><li>Politicas</li></a>
+        <a href=""><li>About</li></a>
+        <a href=""><li>Politicas</li></a>
         <a href=""><li>Contacto</li></a>
         </ul>
         <p>
