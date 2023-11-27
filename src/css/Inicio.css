@@ -20,11 +20,10 @@ div {
 }
 
 .catalogo {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   justify-content: center;
   background-color: #ec008c, #fc6767;
-  height: 900px;
   margin-bottom: 80px;
 }
 
@@ -34,8 +33,9 @@ div {
   text-align: center;
   margin: 20px;
   box-sizing: border-box;
-  height: 180px;
-  width: 180px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgb(178, 174, 174);
 }
 
 .boton {
@@ -64,4 +64,19 @@ div {
 @font-face {
   font-family: Brush;
   src: url("src/Fonts/Regular Brush.otf");
+}
+
+.producto--imagen {
+  height: 200px;
+  object-fit: cover;
+}
+
+.producto--descripcion {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.producto--textos {
+  padding: 5px;
 }
