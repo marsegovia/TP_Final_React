@@ -36,7 +36,7 @@ function Inicio() {
         </a>
       </div>
 
-      <h2 className="texto"> Catálogo de Objetos</h2>
+      <h2 className="texto"></h2>
 
       <div id="seccion-catalogo" className="catalogo">
         {fotos.map((foto) => (
